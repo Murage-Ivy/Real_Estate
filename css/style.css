@@ -10,6 +10,12 @@
   font-family: Space Grotesk;
   color: black;
 }
+
+h2 {
+  color: #0f298b;
+  font-weight: 400;
+  font-size: 2.0em;
+}
 body {
   background-color: #fafafa;
   margin: 38px;
@@ -17,9 +23,9 @@ body {
 
 /* Nav bar styles  */
 header:hover {
-    background-color: white;
-    transition: all 0.5s ease-out;
-    transform: scale(1.02);
+  background-color: white;
+  transition: all 0.5s ease-out;
+  transform: scale(1.02);
 }
 
 nav {
@@ -29,15 +35,14 @@ nav {
   justify-content: space-between;
   padding: 20px 30px 20px 30px;
   border-bottom: 1px solid rgb(231, 220, 220);
-
 }
 .nav-bar {
   align-items: center;
 }
 
-.active, a:hover{
-    color: #2549d3;
-
+.active,
+a:hover {
+  color: #2549d3;
 }
 
 #main-title {
@@ -60,4 +65,32 @@ li {
   font-family: Space Grotesk;
   font-weight: bolder;
   border-style: none;
+}
+
+/* Intro class styles */
+
+.intro {
+  margin: 50px;
+  display: flex;
+  justify-content: space-betwe;
+  
+}
+.learn_more{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+}
+.icons{
+    margin-top: 25px;
+    display: flex;
+    gap: 30px;
+    
+}
+img {
+  height: 300px;
+}
+.material-symbols-outlined {
+  color: #0f298b;
+  font-size: 30px;
 }
