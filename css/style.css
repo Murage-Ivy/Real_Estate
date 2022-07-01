@@ -9,12 +9,14 @@
   text-decoration: none;
   font-family: Space Grotesk;
   color: black;
+  
 }
+
 
 h2 {
   color: #0f298b;
-  font-weight: 400;
-  font-size: 2.0em;
+  font-weight: 500;
+  font-size: 2em;
 }
 body {
   background-color: #fafafa;
@@ -32,7 +34,9 @@ nav {
   display: flex;
   flex-direction: row;
   height: 70px;
+  gap:80px;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 30px 20px 30px;
   border-bottom: 1px solid rgb(231, 220, 220);
 }
@@ -65,27 +69,24 @@ li {
   font-family: Space Grotesk;
   font-weight: bolder;
   border-style: none;
+  
 }
 
 /* Intro class styles */
-
 .intro {
   margin: 50px;
   display: flex;
   justify-content: space-betwe;
-  
 }
-.learn_more{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
- 
+.learn_more {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.icons{
-    margin-top: 25px;
-    display: flex;
-    gap: 30px;
-    
+.icons {
+  margin-top: 25px;
+  display: flex;
+  gap: 30px;
 }
 img {
   height: 300px;
@@ -93,4 +94,101 @@ img {
 .material-symbols-outlined {
   color: #0f298b;
   font-size: 30px;
+}
+/* End of intro div  */
+
+/* Start of type */
+
+.type {
+  background-color: white;
+  transition: all 0.5 ease-out;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(235, 233, 233);
+  box-sizing: border-box;
+  width: 100%;
+}
+.places {
+  display: flex;
+  flex-direction: column;
+}
+
+.type:hover {
+  transform: scale(1.02);
+  background-color: white;
+}
+
+select {
+  border-style: none;
+  color: #0f298b;
+  background-color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 15px;
+
+  /* justify-content: space-between; */
+}
+
+.search {
+  background-color: #2549d3;
+  display: flex;
+  width: 100px;
+  height: 35px;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+}
+.material-symbols-rounded {
+  color: white;
+}
+
+#products{
+    text-align: left;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prod-info{
+    text-align: center;
+
+}
+
+.cards{
+    display: flex;
+    margin: 20px;   
+    gap: 25px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding:50px;
+    box-sizing: content-box;
+    width: 200px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(235, 233, 233);
+
+    
+
+}
+
+.image2{
+    height: 80px;
+    margin-bottom:25px;
+
 }

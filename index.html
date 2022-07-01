@@ -8,6 +8,8 @@
     <script src="https://kit.fontawesome.com/6505c0a05e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <title>Vallie's Estate</title>
 </head>
@@ -45,30 +47,45 @@
     </div>
 
     <div class="type">
-        <select name="location" id="location-select">
-            <option value="">Location</option>
-        </select>
-        <span>Lekki</span>
+        <div class="places">
+            <div class="select">
+                <select name="location" id="location-select">
+                    <option value="">Location </option>
+                </select>
+                <select name="property" id="property-select">
+                    <option value="">Property Type</option>
+                </select>
+                <select name="price" id="price-select">
+                    <option value="">Max Price</option>
+                </select>
+            </div>
+            <div class="prop-info">
+                <span>Duplex</span>
+                <span>Lekki</span>
+                <span>$ 10,000</span>
+            </div>
+        </div>
 
-        <select name="property" id="property-select">
-            <option value="">Property Type</option>
-        </select>
-        <span>Duplex</span>
 
-        <select name="price" id="price-select">
-            <option value="">Max Price</option>
-        </select>
-        <span>$ 10,000</span>
+        <div class="search">
+            <span class="material-symbols-rounded">search</span>
+            search
+
+        </div>
     </div>
+    
+    <h2 id="products">Our Products</h2>
+    <div class="products">
+        
+        <div class="prod-info">
+            <h2>How it works</h2>
+            <p>This is how our products works</p>
+        </div>
 
-    <div>
-        <h2>Our Products</h2>
-        <h2>How it works</h2>
-        <p>This is how our products works</p>
 
         <div class="cards">
-            <div>
-                <img src="./images/address mark.png" alt="location">
+            <div class="card">
+                <img class="image2" src="./images/address mark.png" alt="location">
                 <h3>Find Home</h3>
                 <p>
                     Our properties are located at prime areas
@@ -76,16 +93,16 @@
                     transportation
                 </p>
             </div>
-            <div>
-                <img src="./images/Smart house.png">
+            <div class="card">
+                <img  class="image2" src="./images/Smart house.png">
                 <h3>Make payments</h3>
                 <p>
                     Our estates come with good network, portable water
                     24hrs light and round the clock security.
                 </p>
             </div>
-            <div>
-                <img src="./images/Secure data protection with fingerprint and lock.png">
+            <div class="card">
+                <img class="image2" src="./images/Secure data protection with fingerprint and lock.png">
                 <h3>Make it Official</h3>
                 <p>
                     We have been in business for over 32 years, for client
@@ -96,7 +113,7 @@
     </div>
 
     <div class="choose">
-        <img src="./images/image 2.png" alt="brown house">
+        <img class="image3" src="./images/image 2.png" alt="brown house">
         <div>
             <h2>Why you should choose us.</h2>
             <p>Creating quality urban lifestyles, building stronger
