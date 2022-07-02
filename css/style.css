@@ -9,7 +9,12 @@
   text-decoration: none;
   font-family: Space Grotesk;
   color: black;
+  align-items: center;
   
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 
@@ -25,23 +30,20 @@ body {
 }
 
 /* Nav bar styles  */
-header:hover {
-  background-color: white;
-  transition: all 0.5s ease-out;
-  transform: scale(1.02);
-}
 
 nav {
   display: flex;
-  flex-direction: row;
   height: 70px;
   /* gap:60px; */
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px 30px 20px 30px;
+  padding: 20px 0px 10px 30px;
   border-bottom: 1px solid rgb(231, 220, 220);
-  box-sizing: border-box;
   width: auto;
+  position: fixed;
+  left: 0; right: 0; top: 0;
+  z-index: 1000;
+  
 
 }
 .nav-bar {
@@ -78,22 +80,20 @@ li {
 
 /* Intro class styles */
 .intro {
-  margin: 50px;
+  margin-top: 100px;
   display: flex;
-  /* gap: 50px; */
   align-items: center;
   justify-content: space-evenly;
   width:auto;
 }
 .learn_more {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: block; 
 }
 .icons {
   margin-top: 25px;
   display: flex;
   gap: 30px;
+  
 }
 img {
   height: 300px;
@@ -181,7 +181,7 @@ select {
 }
 
 .card{
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -193,7 +193,7 @@ select {
     margin-top: 10px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px rgb(235, 233, 233);
+    box-shadow: 5px 5px 5px rgb(235, 233, 233); */
 
     
 
@@ -212,6 +212,7 @@ select {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: 50px;
 }  
 
 .choose-info{
@@ -229,3 +230,49 @@ select {
 }
 
 
+.properties{
+  text-align: center;  
+  margin:100px;
+  display: inline;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+
+}
+
+.image4{
+    height: 150px;
+}
+
+.view-more{
+    text-align: center;
+    float: right;
+}
+
+
+
+.customers-feedback{
+    display:inline;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding:50px;
+
+}
+
+.feedback{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    gap:50px;
+    line-height: 2;
+}
+
+.feedback1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height:2;
+}
