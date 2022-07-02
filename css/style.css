@@ -208,4 +208,24 @@ select {
 
 /* start  styling choose class */
 
+.choose{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}  
+
+.choose-info{
+    line-height: 2em;
+    
+}
+
+.square-check1 ,.square-check2{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap:10px;
+    font-size: 300;   
+    text-align: center;
+}
+
 
