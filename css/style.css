@@ -5,28 +5,37 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
   text-decoration: none;
   font-family: Space Grotesk;
   color: black;
   align-items: center;
-  
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
+  border: 5px dotted blue;
+  height: 100%;
+  width: min-content;
+  overflow-x: hidden;
 }
-
 
 h2 {
   color: #0f298b;
   font-weight: 500;
   font-size: 2em;
 }
-body {
+.body {
+  height: 100%;
+  width: 100%;
   background-color: #fafafa;
-  margin: 38px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 5px dotted red;
+  width: min-content;
+  overflow-x: hidden;
 }
 
 /* Nav bar styles  */
@@ -34,17 +43,20 @@ body {
 nav {
   display: flex;
   height: 70px;
-  /* gap:60px; */
   justify-content: space-evenly;
   align-items: center;
   padding: 20px 0px 10px 30px;
   border-bottom: 1px solid rgb(231, 220, 220);
   width: auto;
   position: fixed;
-  left: 0; right: 0; top: 0;
+  left: 0;
+  right: 0;
+  top: 0;
   z-index: 1000;
-  
+}
 
+img {
+  height: 300px;
 }
 .nav-bar {
   align-items: center;
@@ -75,32 +87,39 @@ li {
   font-family: Space Grotesk;
   font-weight: bolder;
   border-style: none;
-  
 }
 
 /* Intro class styles */
 .intro {
   margin-top: 100px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.row {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-evenly;
-  width:auto;
+  margin: 30px;
+}
+.image1 {
+  margin-top: 50px;
 }
 .learn_more {
-  display: block; 
+  border: 1px solid black;
+  margin: 20px;
 }
-.icons {
-  margin-top: 25px;
-  display: flex;
-  gap: 30px;
-  
-}
-img {
-  height: 300px;
-}
+
 .material-symbols-outlined {
-  color: #0f298b;
+  box-shadow: none;
+  border-style: none;
+  background-color: #0f298b;
+  border-radius: 100%;
   font-size: 30px;
+  color: white;
+  margin: 0;
+  outline: none;
 }
 /* End of intro div  */
 
@@ -109,26 +128,34 @@ img {
 .type {
   background-color: white;
   transition: all 0.5 ease-out;
-  height: 80px;
-  display: flex;
-  justify-content:space-evenly;
-  align-items: center;
-  padding: 25px;
-  border-radius: 5px;
+  margin: 30px;
+  padding: 10px 30px;
+  border-radius: 15px;
   box-shadow: 5px 5px 5px rgb(235, 233, 233);
-  box-sizing: border-box;
-  width: 1000px;
-
-  
 }
 .places {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .type:hover {
   transform: scale(1.02);
   background-color: white;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.select input {
+  text-decoration: none;
+  border-style: none;
+  text-align: center;
+  outline: none;
 }
 
 select {
@@ -138,141 +165,143 @@ select {
   text-decoration: none;
   font-weight: 500;
   padding: 15px;
-
-  /* justify-content: space-between; */
 }
 
 .search {
   background-color: #2549d3;
   display: flex;
-  width: 100px;
-  height: 35px;
   justify-content: center;
-  padding: 8px;
+  padding: 5px 10px 5px 15px;
   border-radius: 5px;
   color: white;
 }
+
 .material-symbols-rounded {
   color: white;
 }
 
-#products{
-    text-align: left;
-    
-    
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
 }
 
-.products{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+.prod-info {
+  text-align: center;
 }
 
-.prod-info{
-    text-align: center;
-
+.cards {
+  display: flex;
+  margin: 20px;
+  gap: 25px;
 }
 
-.cards{
-    display: flex;
-    margin: 20px;   
-    gap: 25px;
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 50px;
+  width: 200px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(235, 233, 233);
 }
 
-.card{
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding:50px;
-    box-sizing: content-box;
-    width: 200px;
-    margin-top: 10px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgb(235, 233, 233); */
-
-    
-
+.image2 {
+  height: 80px;
+  margin-bottom: 25px;
 }
-
-.image2{
-    height: 80px;
-    margin-bottom:25px;
-
-}
-
 
 /* start  styling choose class */
 
-.choose{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 50px;
-}  
-
-.choose-info{
-    line-height: 2em;
-    
+.choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
 }
 
-.square-check1 ,.square-check2{
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    gap:10px;
-    font-size: 300;   
-    text-align: center;
+.choose-info {
+  line-height: 2em;
 }
 
+.cards1 {
+}
 
-.properties{
-  text-align: center;  
-  margin:100px;
-  display: inline;
-  flex-direction: column;
+.square-check1,
+.square-check2 {
+  display: flex;
   justify-content: space-evenly;
-
-
+  align-items: center;
+  gap: 10px;
+  font-size: 300;
+  text-align: center;
 }
 
-.image4{
-    height: 150px;
+.properties {
+  text-align: center;
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: ;
 }
 
-.view-more{
-    text-align: center;
-    float: right;
+.image4 {
+  height: 150px;
 }
 
-
-
-.customers-feedback{
-    display:inline;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding:50px;
-
+.view-more {
+  text-align: center;
+  float: right;
 }
 
-.feedback{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    gap:50px;
-    line-height: 2;
+/* Start of customer feedback styling  */
+
+.customers-feedback {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
 }
 
-.feedback1{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    line-height:2;
+.feedback {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  gap: 50px;
+  line-height: 2;
+}
+
+.feedback1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 2;
+}
+
+/* End of customer feedback style */
+
+footer {
+  background-color: #0f298b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  color: white;
+}
+
+.footer {
+  line-height: 2;
+  margin-top: 50px;
 }
