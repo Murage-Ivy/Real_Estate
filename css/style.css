@@ -160,7 +160,19 @@ select {
 /* Start of products styling */
 .products {
   margin: 100px 100px;
+  border: 1px solid black;
+  text-align: center;
 }
+
+.products .heading{
+  text-align: left;
+}
+
+h2{
+  color:#0f298b;
+}
+
+
 
 .cards {
   display: flex;
@@ -232,15 +244,15 @@ select {
   display: flex;
   margin-bottom: 20px;
   justify-content: space-evenly;
-  background-color: white;
+  
 }
 
 .card1 {
-  border: 2px solid black;
-  padding: 10px;
+  background-color: white;
+  border-radius: 0% 26% 0% 8%;
+  
 }
 .option {
-  border: 1px solid orangered;
   display: flex;
   justify-content: space-between;
   padding: 10px;
