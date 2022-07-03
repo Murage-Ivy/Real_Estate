@@ -15,8 +15,7 @@ html,
 body {
   margin: 0 auto;
   border: 5px dotted blue;
-  overflow-x: hidden; 
-  
+  overflow-x: hidden;
 }
 
 nav {
@@ -27,8 +26,6 @@ nav {
   padding: 20px 0px 10px 30px;
   border-bottom: 1px solid rgb(231, 220, 220);
   width: auto;
- 
- 
 }
 
 img {
@@ -70,14 +67,13 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top:60px ;
+  margin-top: 60px;
 }
 .row {
   border: 1px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 .image1 {
   margin-top: 50px;
@@ -111,14 +107,12 @@ li {
   width: fit-content;
   border: 1px solid red;
   padding: 10px 50px;
-  
 }
 .places {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border: 1px solid blue;
-
 }
 
 .type:hover {
@@ -131,7 +125,6 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
 
 .select input {
@@ -171,22 +164,13 @@ select {
   margin-top: 50px;
   border: 2px solid brown;
 }
-.products:nth-child(1)
-{
-    align-items: left;
-}
-
-
-.prod-info {
-  text-align: center;
-}
 
 .cards {
   width: fit-content;
   display: flex;
   margin: 20px;
   gap: 25px;
-  border: 3px dotted green ;
+  border: 3px dotted green;
 }
 
 .card {
@@ -196,7 +180,7 @@ select {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding: 50px 10px 5PX;
+  padding: 50px 10px 5px;
   width: 200px;
   margin-top: 10px;
   background-color: white;
@@ -228,34 +212,59 @@ select {
   text-decoration: none;
 }
 
-
-
-.bi-check2-square i{
-    border:10px solid black ;
-    text-decoration: none;
-    color: #;
-
+.choose-info p {
+  color: black;
+  display: inline;
 }
 
-
-
-
+.bi-check2-square {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #0f298b;
+  font-weight: bolder;
+}
 
 .properties {
   text-align: center;
-  margin: 100px;
+  margin-top: 60px;
+  border: 2px solid red;
+}
+
+.cards1{
+    border: 2px solid purple;
+    display: flex;
+    padding: 20px 10px;
+    justify-content: space-evenly;
+    background-color: white;
+   
+}
+.option {
+  border: 1px solid orangered;
   display: flex;
-  flex-direction: column;
-  
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.view-more {
+  border: 2px solid green;
+  width: fit-content;
+  float: right;
+}
+
+.prop-intro h2 {
+  color: #2549d3;
+}
+
+#price {
+  color: #0f298b;
+}
+
+#place1 {
+  font-size: 25px;
 }
 
 .image4 {
   height: 150px;
-}
-
-.view-more {
-  text-align: center;
-  float: right;
 }
 
 /* Start of customer feedback styling  */
