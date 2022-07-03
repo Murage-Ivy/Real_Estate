@@ -247,7 +247,6 @@ select {
 }
 
 .view-more {
-  border: 2px solid green;
   width: fit-content;
   float: right;
 }
@@ -267,13 +266,11 @@ select {
 .image4 {
   height: 150px;
 }
-
 /* End of property styling */
 
 /* Start of customer feedback styling  */
 
 .customers-feedback {
-  border: 2px solid brown;
   margin: 100px 100px;
   text-align: center;
 }
@@ -298,7 +295,6 @@ select {
   width: fit-content;
   float: right;
 }
-
 /* End of customer feedback style */
 
 footer {
@@ -325,3 +321,5 @@ footer {
 .footer h3 {
   color: white;
 }
+
+/* End of footer styles */
