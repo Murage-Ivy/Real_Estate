@@ -16,6 +16,7 @@ body {
   margin: 0 auto;
   border: 5px dotted blue;
   overflow-x: hidden;
+  background-color: #fafafa;
 }
 
 nav {
@@ -224,19 +225,28 @@ select {
   font-weight: bolder;
 }
 
+/* End of choosing styling */
+
+
+/* Start of properties styling */
 .properties {
   text-align: center;
-  margin-top: 60px;
+  margin: 100px 100px;
   border: 2px solid red;
 }
 
-.cards1{
-    border: 2px solid purple;
-    display: flex;
-    padding: 20px 10px;
-    justify-content: space-evenly;
-    background-color: white;
-   
+.cards1 {
+  border: 2px solid purple;
+  display: flex;
+
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+  background-color: white;
+}
+
+.card1 {
+  border: 2px solid black;
+  padding: 10px;
 }
 .option {
   border: 1px solid orangered;
@@ -252,7 +262,7 @@ select {
 }
 
 .prop-intro h2 {
-  color: #2549d3;
+  color: #0f298b;
 }
 
 #price {
@@ -267,34 +277,40 @@ select {
   height: 150px;
 }
 
+/* End of property styling */
+
 /* Start of customer feedback styling  */
 
 .customers-feedback {
-  display: flex;
+  border: 2px solid brown;
+  margin: 100px 100px;
   text-align: center;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px;
 }
 
 .feedback {
+  border: 1px solid green;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
-  gap: 50px;
-  line-height: 2;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 30pt;
 }
 
 .feedback1 {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  line-height: 2;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: left;
+}
+
+.view-more1 {
+  border: 2px solid red;
+  width: fit-content;
+  float: right;
 }
 
 /* End of customer feedback style */
+
+
 
 footer {
   background-color: #0f298b;
