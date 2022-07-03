@@ -197,7 +197,6 @@ select {
 
 .choose-info {
   line-height: 2em;
-  border: 1px solid goldenrod;
   text-decoration: none;
 }
 .quality {
@@ -227,13 +226,10 @@ select {
 .properties {
   text-align: center;
   margin: 100px 100px;
-  border: 2px solid red;
 }
 
 .cards1 {
-  border: 2px solid purple;
   display: flex;
-
   margin-bottom: 20px;
   justify-content: space-evenly;
   background-color: white;
