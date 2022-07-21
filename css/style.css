@@ -4,19 +4,19 @@
 * {
   list-style: none;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   text-decoration: none;
   font-family: Space Grotesk;
   color: black;
   align-items: center;
 }
 
-html,
 body {
   margin: 0 auto;
   overflow-x: hidden;
   background-color: #fafafa;
   width: 80%;
+  border: 1px solid black;
 }
 
 nav {
@@ -65,15 +65,14 @@ li {
 
 /* Intro class styles */
 .intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  border: 1px solid green;
+  justify-content: space-between;
   margin-top: 60px;
-  
 }
 .row {
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .image1 {
@@ -81,8 +80,6 @@ li {
 }
 .learn_more {
   margin: 20px;
-  box-sizing: border-box;
-  width: 200px;
 }
 
 .button1 {
@@ -94,11 +91,17 @@ li {
   border-style: none;
 }
 
-.bi-play-circle {
+.fa-solid {
+  background-color: #0f298b;
   color: white;
-  font-size: 1em;
-  text-align: center;
+  font-size: 1rem;
+  padding: 8px 5px 5px 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 20px;
 }
+
 /* End of intro div  */
 
 /* Start of type */
@@ -152,6 +155,7 @@ select {
   padding: 5px 10px 5px 15px;
   border-radius: 5px;
   color: white;
+  border-style: none;
 }
 
 .material-symbols-rounded {
@@ -180,7 +184,6 @@ h2 {
 .card {
   text-align: center;
   padding: 50px 10px 5px;
-
   margin-top: 10px;
   background-color: white;
   box-shadow: 5px 5px 5px rgb(235, 233, 233);
@@ -322,3 +325,52 @@ footer {
 }
 
 /* End of footer styles */
+
+/* Start of media queries */
+
+@media only screen and (max-width: 960px) {
+  .row {
+    flex-direction: column;
+  }
+  .image1 {
+    max-width: 100%;
+  }
+  .type {
+    width: 80%;
+    margin: 30px auto;
+    padding: 10px 10px;
+  }
+
+  .places {
+    flex-direction: column;
+  }
+
+  .select {
+    margin: 20px;
+  }
+
+  .search {
+    margin-top: 20px;
+  }
+  .products {
+    margin: 0;
+    width: 100%;
+  }
+  .cards {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .card{
+  padding: 30px 10px 5px;
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  }
+  .products .heading {
+    text-align: left;
+    margin-left:40px ;
+  }
+
+}
+/* End of media queries */
