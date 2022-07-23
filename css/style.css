@@ -16,7 +16,6 @@ body {
   overflow-x: hidden;
   background-color: #fafafa;
   width: 80%;
-  border: 1px solid black;
 }
 
 nav {
@@ -65,7 +64,6 @@ li {
 
 /* Intro class styles */
 .intro {
-  border: 1px solid green;
   justify-content: space-between;
   margin-top: 60px;
 }
@@ -113,6 +111,7 @@ li {
   padding: 10px 20px;
   border-radius: 15px;
   box-shadow: 5px 5px 5px rgb(235, 233, 233);
+
 }
 .places {
   display: flex;
@@ -152,10 +151,11 @@ select {
   background-color: #2549d3;
   display: flex;
   justify-content: center;
-  padding: 5px 10px 5px 15px;
+  padding: 5px 8px 5px 8px;
   border-radius: 5px;
   color: white;
   border-style: none;
+ 
 }
 
 .material-symbols-rounded {
@@ -163,7 +163,6 @@ select {
 }
 /* Start of products styling */
 .products {
-  margin: 100px 100px;
   text-align: center;
 }
 
@@ -235,7 +234,6 @@ h2 {
 /* Start of properties styling */
 .properties {
   text-align: center;
-  margin: 100px 100px;
 }
 
 .cards1 {
@@ -245,6 +243,8 @@ h2 {
 }
 
 .card1 {
+  box-shadow: 2px 2px 5px grey;
+  margin-top: 20px;
   background-color: white;
   border-radius: 0% 26% 0% 8%;
 }
@@ -287,7 +287,7 @@ h2 {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  gap: 30pt;
+  gap: 30px;
 }
 
 .feedback1 {
@@ -300,6 +300,7 @@ h2 {
 .view-more1 {
   width: fit-content;
   float: right;
+  margin-top: 20px;
 }
 /* End of customer feedback style */
 
@@ -328,7 +329,7 @@ footer {
 
 /* Start of media queries */
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1000px) {
   .row {
     flex-direction: column;
   }
@@ -361,16 +362,65 @@ footer {
     width: 100%;
     margin: 0;
   }
-  .card{
-  padding: 30px 10px 5px;
-  width: 80%;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  .card {
+    padding: 30px 10px 5px;
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 10px;
   }
   .products .heading {
     text-align: left;
-    margin-left:40px ;
+    margin-left: 40px;
   }
 
+  .choose {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .choose-info-image3>img{
+    max-width: 100%;
+   
+  }
+  .cards1 {
+    flex-direction: column;
+  }
+  .card1 {
+    width: 100%;
+    background-color: white;
+    border-radius: 0% 26% 0% 8%;
+  }
+
+  .properties {
+    text-align: center;
+    margin: 20px;
+    margin-top: 50px;
+  }
+  .image4 {
+    width: 100%;
+  }
+
+  .feedback {
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 30px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .customers-feedback {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .container {
+    display: block;
+  }
+
+  footer {
+    height: auto;
+  }
 }
 /* End of media queries */
